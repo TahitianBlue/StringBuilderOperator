@@ -24,8 +24,8 @@ string s = SBO.i + "aaa" + 20 + "bbbb";
 For multiple statements (loop, etc.)
 
 ```
- SBO s = SBO.i; Hold string as SBO type
- for (int i = 0; i <100; i ++) s + = someString; Concatenate with SBO type
+ SBO s = SBO.i; // Hold string as SBO type
+ for (int i = 0; i <100; i ++) s + = someString; // Concatenate with SBO type
 ```
 Note: if you write ```s = SBO.i + s + someString; ``` in string type, SBO.ToString() will be executed for each loop and it will be slow.
 

@@ -24,8 +24,8 @@ using SBO = StringBuilderOperator.StringBuilderOperator;
 - 複数ステートメントで連結する場合（ループなど）
 
 ```
-   SBO s = SBO.i; SBO型で文字列を保持
-   for( int i=0 ; i<100 ; i++ ) s += someString; SBO型で連結すること
+   SBO s = SBO.i; // SBO型で文字列を保持
+   for( int i=0 ; i<100 ; i++ ) s += someString; // SBO型で連結すること
 ```
 
 string型で ```s = SBO.i + s + someString;``` としてしまうとループ毎にSBO.ToString()が実行されて遅くなるので注意
